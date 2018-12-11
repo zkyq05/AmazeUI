@@ -46,6 +46,10 @@ public class HomeController {
     public String tables() {
         return "home/table_basic";
     }
+    @RequestMapping("index")
+    public String homeI() {
+        return "redirect:/home/index";
+    }
     @RequestMapping("home/index")
     public String home() {
         return "home/index";
@@ -68,7 +72,7 @@ public class HomeController {
     }
     @RequestMapping("home/form_basic")
     public String table_list_img() {
-        return "form_basic";
+        return "home/form_basic";
     }
     @RequestMapping("home/form_validate")
     public String sign_up() {
